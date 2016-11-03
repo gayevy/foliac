@@ -1,0 +1,283 @@
+body {
+	font-family: "Lato", sans-serif;
+	font-size: 16px;
+	color: #000;
+}
+
+.banner {
+	background-image: url(../images/background.jpg);
+	height: 650px;
+	padding: 25px;
+	color: #fff;
+}
+
+header {
+	margin: 0 auto;
+	width: 960px;
+	list-style-type: none;
+}
+
+.site-navigation {
+	float: right;
+	font-size: 16px;
+	font-weight: 700;
+}
+
+.site-navigation li span:hover {
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+.site-navigation li {
+	display: inline-block;
+}
+
+.site-navigation ul li+li:before {
+	content: "/";
+	padding: 0 40px 0 40px;
+	opacity: .5;
+}
+
+.banner-content {
+	text-align: center;
+	text-transform: uppercase;
+	padding: 70px 0 50px 0;
+}
+
+.banner-content h1 {
+	font-family: 'BigJohn', sans-serif;
+	font-size: 46px;
+}
+
+.banner-content h3 {
+	font-family: "SlimJoe";
+	font-size: 30px;
+	margin-bottom: 30px;
+}
+
+.banner-content a{
+	display: inline-block;
+	padding: 5px 10px;
+	border: 2px solid #48bf72;
+	border-radius: 3px;
+	text-decoration: none;
+	color: #48BF72;
+	font-family: "Lato";
+	font-size 14px;
+}
+
+.projects {
+	width: 1170px;
+	padding: 15px;
+	margin: 0 auto;
+}
+
+.projects-filters ul{
+	list-style-type: none;
+	text-align: center;
+}
+
+.projects-filters ul li{
+	list-style-type: none;
+	display: inline-block;
+	}
+
+.projects-filters ul li button{
+	border: none;
+	background-color: #EAEAEA;
+	color: #3C4955;
+	border: none;
+	padding: 5px 10px;
+	border-radius: 2px;
+	outline: 0;
+}
+
+.projects-filters ul li button:active, .projects-filters ul li button:hover {
+background-color: #48bf72;
+	color: #fff;
+}
+
+.projects-filters ul li+li {
+	margin-left: 10px;
+}
+
+#first-button {
+	background-color: #48bf72;
+	color: #fff;
+}
+
+.project-images {
+	position: relative;
+	height: 830px;
+	}
+
+.project {
+	position: absolute;
+}
+
+.project-info {
+	color: #fff;
+	position: absolute;
+	text-align: center;
+	top:  0; right: 0; bottom: 0; left: 0;
+	background-color: rgba( 0, 0, 0, 0.6);
+	border-radius: 10px;
+	line-height: .9em;
+	opacity: 0;
+	transition: all .5s ;
+}
+
+.project-content {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+
+
+.project-images > div:hover .project-info {
+	opacity: 1;
+}
+
+
+.project-1{
+	top: 10px;
+	left: 10px;
+	width: 450px;
+	height: 302px;
+	background: url(../images/project-1.png) center no-repeat;
+	background-size: cover;
+	border-radius: 10px;
+}
+
+.project-2{
+	top: 10px;
+	right: 10px;
+	width: 650px;
+	height: 438px;
+	background: url(../images/project-2.png) center no-repeat;
+	background-size: cover;
+	border-radius: 10px;
+}
+
+.project-3{
+	bottom: 10px;
+	left: 10px;
+	width: 450px;
+	height: 486px;
+	background: url(../images/project-3.png) center no-repeat;
+	background-size: cover;
+	border-radius: 10px;
+}
+
+.project-4{
+	bottom: 10px;
+	right: 10px;
+	width: 650px;
+	height: 350px;
+	background: url(../images/project-4.png) center no-repeat;
+	background-size: cover;
+	border-radius: 10px;
+}
+
+.profile {
+	background: url(../images/author.png) center no-repeat;
+	background-size: cover;
+	height: 500px;
+	position: relative;
+	color: #FFF;
+}
+
+.profile .wrapper {
+	z-index: 1;
+	background-color: rgba(60, 73, 85, .7);
+	position: absolute;
+	top:  0; right: 0; bottom: 0; left: 0;
+}
+
+
+.profile-content {
+	width: 1170px;
+	margin: 0 auto;
+	padding: 80px 150px 0 0;
+	line-height: .65em;
+}
+.profile-info {
+	width: 400px;
+	float: right;
+}
+
+.profile-info p {
+	line-height: 1.6em;
+	font-size: 14px;
+}
+
+.contat-form {
+	font-size: 0;
+}
+
+.contat-form .container {
+	width: 700px;
+	padding: 50px 0 0 0;
+	margin: 0 auto;
+
+}
+
+.contat-form h2 {
+	font-family: 'BigJohn', sans-serif;
+	font-size: 26px;
+	color: #48bf72;
+	text-align: center;
+}
+
+.container label {
+	display: inline-block;
+	border-radius: 3px;
+	border: 2px solid #3c4955;
+	padding-left: 50px;
+	float: left;
+}
+
+.container .name{
+	background:  #3C4955 url(../images/user.png) no-repeat 13px 13px;
+	height: 50px;
+	width: 48%;
+}
+
+.container .email{
+	background:  #3C4955 url(../images/mail.png) no-repeat 14px 16px;
+	height: 50px;
+	width: 48%;
+	margin-left: 28px;
+}
+
+.container input{
+	margin: 0 auto;
+	height: 100%;
+	border: none;
+	width: 100%;
+	padding-left: 5px;
+	font-size: 14px;
+
+}
+
+.container textarea {
+	margin: 0 auto;
+	height: 300px;
+	width: 100%;
+	margin-left: 0px;
+}
+
+.container .message {
+	background:  #3C4955 url(../images/crayon.png) no-repeat 13px 13px;
+	width: 100%;
+	margin: 30px 0;
+}
+
+input[type="submit"] {
+	background-color: #48bf72;
+	padding: 15px 0;
+	color: #fff;
+	text-transform: uppercase;
+	letter-spacing: 0.2em;
+}
