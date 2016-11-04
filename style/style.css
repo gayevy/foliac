@@ -55,15 +55,17 @@ header {
 	margin-bottom: 30px;
 }
 
-.banner-content a{
+.banner-link {
 	display: inline-block;
-	padding: 5px 10px;
+	padding: 14px 22px;
 	border: 2px solid #48bf72;
 	border-radius: 3px;
 	text-decoration: none;
 	color: #48BF72;
 	font-family: "Lato";
-	font-size 14px;
+	font-size: 14px;
+	font-weight: 700;
+	line-height: 1;
 }
 
 .projects {
@@ -212,6 +214,21 @@ background-color: #48bf72;
 	font-size: 14px;
 }
 
+.profile-link {
+	margin-top: 24px;
+	display: inline-block;
+	padding: 14px 22px;
+	border: 2px solid #3c4955;
+	border-radius: 3px;
+	text-decoration: none;
+	color: #3c4955;
+	font-family: "Lato";
+	font-size: 14px;
+	text-transform: uppercase;
+	font-weight: 700;
+	line-height: 1;
+}
+
 .contat-form {
 	font-size: 0;
 }
@@ -251,21 +268,21 @@ background-color: #48bf72;
 	margin-left: 28px;
 }
 
-.container input{
+.container input, .container textarea {
 	margin: 0 auto;
 	height: 100%;
 	border: none;
 	width: 100%;
-	padding-left: 5px;
-	font-size: 14px;
-
+	padding-left: 17px;
+	font-size: 17px;
+	font-weight: 700;
+	background-color: #f1f1f1;
 }
 
 .container textarea {
-	margin: 0 auto;
 	height: 300px;
-	width: 100%;
 	margin-left: 0px;
+	padding-top: 17px
 }
 
 .container .message {
@@ -276,8 +293,16 @@ background-color: #48bf72;
 
 input[type="submit"] {
 	background-color: #48bf72;
-	padding: 15px 0;
+	height: 50px; 
 	color: #fff;
+	font-size: 14px;
 	text-transform: uppercase;
 	letter-spacing: 0.2em;
+	border-radius: 3px;
+}
+
+footer {
+	background-color: #3c4955;
+	height: 200px;
+	margin-top: 50px;
 }
