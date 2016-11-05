@@ -15,7 +15,7 @@ header {
 	margin: 0 auto;
 	width: 960px;
 	list-style-type: none;
-}
+	}
 
 .site-navigation {
 	float: right;
@@ -305,4 +305,84 @@ footer {
 	background-color: #3c4955;
 	height: 200px;
 	margin-top: 50px;
+	padding: 73px 0;
+}
+
+footer .content {
+	width: 1170px;
+	margin: 0 auto;
+}
+
+footer .content p{
+	color: #fff;
+	font-family: "Lato";
+	font-weight: 400;
+	font-size: 16px;
+	float: left;
+}
+
+footer .social {
+	float: right;
+}
+
+.social li {
+		list-style-type: none;
+		display: inline-block;
+}
+
+.hexagon {
+	position: relative;
+	width: 100px;
+	height: 55px;
+	background: red;
+	position: relative;
+}
+.hexagon:before {
+	content: "";
+	position: absolute;
+	top: -25px;
+	left: 0;
+	width: 0;
+	height: 0;
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	border-bottom: 25px solid red;
+}
+.hexagon:after {
+	content: "";
+	position: absolute;
+	bottom: -25px;
+	left: 0;
+	width: 0;
+	height: 0;
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	border-top: 25px solid red;
+}
+.hexagon + .hexagon {
+	margin-left: 10px;
+}
+.hexagon img {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+
+.hexagon:nth-child(first) {
+	background-color: blue;
+}
+
+#twitter:before {
+	background: url('../images/twitter.png') 10px 10px no-repeat;
+}
+#linkedin:before {
+	background: #fff url('../images/linkedin.png') 0 0 no-repeat;
+}
+
+#dribble:before {
+	background: url('../images/dribbble.png') 0 0 no-repeat;
+}
+#behance:before {
+	background: url('../images/behance.png') 0 0 no-repeat;
 }
